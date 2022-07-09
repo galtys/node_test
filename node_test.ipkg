@@ -1,0 +1,26 @@
+package node_test
+version = 0.5.0
+authors = "galtys"
+-- maintainers =
+-- license = GPL2
+-- brief =
+-- readme =
+-- homepage =
+-- sourceloc =
+-- bugtracker =
+
+-- packages to add to search path
+
+sourcedir = "src"
+
+depends = prelude_pygen,base >= 0.5.1
+        
+opts       = "--codegen pygen  --no-prelude"
+-- modules to install
+modules = Main2node
+	  
+-- main file (i.e. file to load at REPL)
+main = Main2node
+
+-- name of executable
+executable = "main2node.py"
