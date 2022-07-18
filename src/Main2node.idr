@@ -24,7 +24,7 @@ show_ocas2 (Muf x) = "double: " ++(show x)
 show_ocas2 Nic = "nic"
 
 show_ocas : Ocas -> String
-show_ocas Bud = "Bud"
+show_ocas Bud = "Bud Hello World"
 show_ocas (Nebo x u) = "Nebo"++(show x)++u
 show_ocas Muf4 = "4sa"
 show_ocas K4a = "das"
@@ -51,13 +51,19 @@ test = cast . (+ 10)
 
 main : IO ()
 main = do     
-     printLn $ test 23
-     printLn $ show 23
+     {-
+     putStrLn $ test 23
+     putStrLn $ show 23
+     putStrLn $ show_ocas Bud
+     putStrLn $ show_ocas Bud
      
-     printLn $ show_ocas $ const_nebo "muf"
-     printLn $ show_ocas2 $ Nic
-     printLn $ show_list [4,9,2,9]
-
+     putStrLn $ show_ocas $ const_nebo "muf"
+     putStrLn $ show_ocas2 $ Nic
+     putStrLn $ show $show_list [4,9,2,9]
+     putStrLn $  cast (x)
+     putStrLn "Hello World"
+     -}
+     putStrLn $ show "Hello World"
 --main : IO ()
 --main = do
   --putStrLn "Hello World"
