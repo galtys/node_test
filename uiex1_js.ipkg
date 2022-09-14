@@ -1,0 +1,28 @@
+package uiex1
+version = 0.5.0
+authors = "galtys"
+-- maintainers =
+-- license = GPL2
+-- brief =
+-- readme =
+-- homepage =
+-- sourceloc =
+-- bugtracker =
+
+-- packages to add to search path
+
+sourcedir = "src"
+
+depends = prelude,base >= 0.5.1,rhone --,rhone-doc
+        
+--opts       = "--codegen pygen  --no-prelude"
+--opts       = "--codegen pygen"
+opts       = "--codegen node"
+-- modules to install
+modules = MonTest
+	  
+-- main file (i.e. file to load at REPL)
+main = MonTest
+
+-- name of executable
+executable = "uiex1.js"
