@@ -13,7 +13,7 @@ authors = "galtys"
 
 sourcedir = "src"
 
-depends = prelude,base >= 0.5.1,rhone,rhone-docs
+depends = prelude,base >= 0.5.1,rhone --,rhone-docs
         
 --opts       = "--codegen pygen  --no-prelude"
 opts       = "--codegen pygen"
